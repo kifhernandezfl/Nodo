@@ -34,4 +34,10 @@ public class nodo
 	{
 		return "Text:" + this.text + "\t" + "ID:" + this.id + "\n";
 	}
+	
+	public nodo clone()
+	{
+		nodo temp = new nodo(this.grade,this.value);
+		return temp;
+	}
 }
